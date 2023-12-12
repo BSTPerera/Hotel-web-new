@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mountain View Nature Resort</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body class="background5">
+    <header>
+
+        <div class="nav-links">
+            <ul class="logo">
+                <li><img src="logo.jpg" alt="Image-34"></li>
+            </ul>
+
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="branches.html" class="nav-link">Branches</a></li>
+                <li><a href="adventures.html" class="nav-link">Adventures</a></li>
+                <li><a href="resturant.html" class="nav-link">Restaurant</a></li>
+                <li><a href="booking.html" class="nav-link">Booking</a></li>
+            </ul>
+
+        </div>
+
+
+    </header>
+    <h1 id="head"><i>Welcome To The Our Booking Page......</i></h1>
+    <div class="booking">
+        <div class="booking-img">
+            <img src="38.jpg" alt="Image-35">
+        </div>
+        <div class="bookforum">
+            <form id="bookingForm">
+                <ul>
+                    <li><h5>Check In</h5><input type="date" id="checkInDate"></li>
+                    <li><h5>Check Out</h5><input type="date" id="checkOutDate"></li>
+                    <li><h5>Promo code</h5><input type="text" id="promoCode"></li>
+                    <li>
+                        <h5>Room Type</h5>
+                        <select name="roomType" id="roomType" size="1">
+                            <option value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="triple">Triple</option>
+                        </select>
+                    </li>
+                    <li><h5>Number of Rooms</h5><input type="number" id="numRooms"></li>
+                    <li><h5>Number of Adults</h5><input type="number" id="numAdults" name="numAdults" min="1" value="1"></li>
+                    <li><h5>Number of Childrens</h5><input type="number" id="numChildren" name="numChildren" min="0" value="0"></li>
+                    <li><h5>Duration of Stay</h5><input type="number" id="duration"> nights</li>
+                    <li>
+                        <h5>Extra Requirements</h5><h6>
+                            <label for="wifi">WiFi</label>
+                            <input type="checkbox" id="wifi"> 
+                            <label for="poolView">Pool View</label> <input type="checkbox" id="poolView">                        
+                            <label for="gardenView">Garden View</label><input type="checkbox" id="gardenView"> 
+                            
+                            <label for="extraBed">Extra Bed</label><input type="checkbox" id="extraBed"> 
+                       </h6>
+                    </li>
+                    <li><button type="button" id="bookButton">Book Now</button></li>
+                    <li><button type="button" id="favButton">Add to favourite</button></li>
+                    
+                        
+                        
+                        <li><button type="button" id="checkFav">check favourite</button></li>
+                        <li><button type="button" id="checkLoy">check loyalty</button></li>
+                        <li><button type="button" id="resetForm">Reset Form</button></li>
+                </ul>
+                    <div class="fieldset">
+                        <fieldset id="adventure">
+                            <legend><b>Adventure : </b></legend>
+                            
+                                <label class="adventure">Diving for local Adults (1 hr) </label>
+                                <input type="checkbox" name="adventure" id="localadults" value="localAdults">
+                            
+                            
+                                <label class="adventure">Diving for local kids (above 5 years)</label>
+                                <input type="checkbox" name="adventure" id="localkids" value="locakkids"> 
+                            
+                            
+                                <label class="adventure">Diving for foreign adults </label>
+                                <input type="checkbox" name="adventure" id="foreignadults" value="foreignadults">
+                            
+        
+                                <label class="adventure">Diving for foreign kids</label>
+                                <input type="checkbox" name="adventure" id="foreignkids" value="foreignkids">
+                            
+                            <label class="guideselection">If in need for a guide during the diving session</label>
+                            <br>
+                                <label class="adultsguideclass">Adult (1000LKR extra will be charged)</label>
+                                <input type="checkbox" name="divinguide" id="adultsguide" value="adultsguide">
+                            
+                            
+                                <label class="adultsguideclass">Kids (500LKR extra will be charged) </label>
+                                <input type="checkbox" name="divinguide" id="kidsguide" value="kidsguide">
+                                <button type="button" id="advButton">Book Adventure</button>
+                        </fieldset></div>
+                
+                
+            </form>
+        </div>
+<div></div>
+    </div>
+            <div id="bookingDetails">
+            <h2>Booking Details</h2>
+            <p><b>Current Booking:</b> <span id="currentBooking"></span></p>
+            <p><b>Current booking cost:</b> <span id="currentBookingCost"></span> </p>
+            <p><b>Overall Booking:</b> <span id="overallBooking"></span></p>
+            <p><b>Overall Cost:</b> <span id="overallBookingCost"></span></p>
+          </div>
+
+
+
+          
+        
+    <h2 id="head3"><b><u>Book And Enjoy</u></b></h2>
+    <div class="container-3">
+        <div class="contact-box">
+            <div class="contact-left">
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="First">
+                            <input type="text" placeholder="Last">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="Enter your contact number">
+                        </div>
+
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter the email here">
+                        </div>
+                        
+
+                    </div>
+
+                    <button type="button" id="submitButton">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 The Mountain View Nature Resort</p>
+    </footer>
+
+
+
+</body>
+
+</html>
