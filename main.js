@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("checkFav").addEventListener("click", function () {
     let favoriteBooking = JSON.parse(localStorage.getItem("favoriteBooking"));
     if (favoriteBooking) {
-      alert(`Favourite Booking:\n${currentBooking}\nCost: ${favoriteBooking.cost.toLocaleString("en-US", { style: "currency", currency: "LKR" })}`);
+      alert(`Favourite Booking:\n${currentBooking}\n${overallBooking}\nCost: ${favoriteBooking.cost.toLocaleString("en-US", { style: "currency", currency: "LKR" })}`);
     } else {
       alert("No favourite booking found.");
     }
